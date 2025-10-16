@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install --production
 
-# Copy app
+# Copy all app files
 COPY . .
 
 # Install Redis
